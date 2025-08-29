@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>List Game Favorit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <h1>LIST GAME FAVORIT</h1>
+    <form id="formGame">
+        <input type="text" id="judul" placeholder="Judul Game">
+        <select id="genre">
+            <option value="">Pilih Genre Game</option>
+            <option>Moba</option>
+            <option>Role Play</option>
+            <option>Shooting Game</option>
+            <option>Advanture</option>
+            <option>Roguelike</option>
+            <option>Fighting Game</option>
+        </select>
+        <button type="submit">Tambah</button>
+    </form>
+
+    <div class="tabel-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>JUDUL GAME</th>
+                    <th>GENRE</th>
+                </tr>
+            </thead>
+            <tbody id="daftarGame">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

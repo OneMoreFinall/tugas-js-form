@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4c9aff;
+  font-weight: 600;
+}
+
+#formGame {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto 30px auto;
+  max-width: 450px;
+}
+
+#judul,
+#genre {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#judul::placeholder {
+  color: #aaa;
+}
+
+#judul:focus,
+#genre:focus {
+  outline: none;
+  border-color: #4c9aff;
+}
+
+#genre option {
+  background: #3d3d3d;
+  color: #fff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #4c9aff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background: #5ba3ff;
+}
+
+.tabel-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background: #404040;
+  color: #fff;
+  padding: 15px;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #404040;
+}
+
+tbody tr:hover {
+  background: #353535;
+}
+
+tbody td {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+tbody tr td:first-child {
+  color: #4c9aff;
+  font-weight: 500;
+}
+
+tbody tr td:last-child {
+  color: #ff9500;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #formGame {
+    padding: 15px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 12px;
+  }
+}
+
+tbody:empty::after {
+  content: "Belum ada game yang ditambahkan...";
+  display: table-cell;
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  font-style: italic;
+}
